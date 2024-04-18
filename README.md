@@ -1,8 +1,8 @@
 ## Hexo
 
 ```
-node --version	#检查是否安装了node.js
-npm --version		#检查是否安装了npm
+node --version
+npm --version
 
 npm install -g hexo-cli
 ```
@@ -17,4 +17,9 @@ npm install
 hexo clean
 hexo g
 hexo s
+```
+
+## demo address
+```
+http://blog.yikuaida.cn
 ```
