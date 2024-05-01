@@ -24,6 +24,6 @@
     "hexo-renderer-swig": "^2.0.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-next": "^8.19.2"
+    "hexo-theme-next": "^8.20.0"
   }
 }
