@@ -18,7 +18,7 @@ type: "about"
   
 ```
 后端开发工程师
-1.喜欢PHP、Go、MySql,Tdengine、Redis、RabbitMQ、Linux、uni-app等前后端、数据库缓存技术
+1.喜欢Python、PHP、Go、MySql,Tdengine、Redis、RabbitMQ、Linux、uni-app等前后端、数据库缓存技术
 2.以结果为导向，拒绝重复造轮子
 3.生命不息，学习不止
 4.热爱运动
