@@ -277,3 +277,11 @@ Monitor 节点填 pve01 是正确的，它是第一个 Monitor，后续可以在
 ```
 
 
+### 虚拟机扩容系统磁盘 (可选)
+```bash
+apt update && apt install -y cloud-guest-utils
+growpart /dev/sda 3
+pvresize /dev/sda3
+lvextend -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
+resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+```

@@ -19,10 +19,10 @@ FRP 内网穿透核心原理是：公网服务器跑 frps（服务端）、内�
 
 ```bash
 # 以 Linux 64 位为例
-mkdir -p /home
+mkdir -p /home/skyinfor
 wget https://github.com/fatedier/frp/releases/download/v0.44.0/frp_0.44.0_linux_amd64
 tar -zxvf frp_0.44.0_linux_amd64.tar.gz
-mv frp_0.44.0_linux_amd64 /home/frp
+mv frp_0.44.0_linux_amd64 /home/skyinfor/frp
 ```
 
 #### 二、配置 frps（服务端）
@@ -65,7 +65,7 @@ Description=FRP Server
 After=network.target
 
 [Service]
-ExecStart=/home/frp/frps -c /home/frp/frps.ini  # 启动服务端，指定配置文件，请自行修改为实际路径
+ExecStart=/home/skyinfor/frp/frps -c /home/skyinfor/frp/frps.ini  # 启动服务端，指定配置文件，请自行修改为实际路径
 Restart=always
 
 [Install]
@@ -125,8 +125,8 @@ After=network.target
 User=root
 Group=root
 Type=simple
-WorkingDirectory=/home/frp/ 
-ExecStart=/home/frp/frpc -c /home/frp/frpc.ini 
+WorkingDirectory=/home/skyinfor/frp/ 
+ExecStart=/home/skyinfor/frp/frpc -c /home/skyinfor/frp/frpc.ini 
 Restart=always  
 RestartSec=3  
 #StandardOutput=/data/log/frpc/stdout.log  # 标准输出日志（替换为你的日志路径）
